@@ -26,19 +26,19 @@ variable "security_group_id" {
 variable "node_instance_types" {
   description = "Instance types for the EKS node group."
   type        = list(string)
-  default     = ["t3.medium"]
+  default     = ["t3.small"]
 }
 
 variable "node_desired_size" {
   description = "Desired number of nodes."
   type        = number
-  default     = 4
+  default     = 2
 }
 
 variable "node_max_size" {
   description = "Maximum number of nodes."
   type        = number
-  default     = 6
+  default     = 2
 }
 
 variable "node_min_size" {
